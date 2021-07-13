@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- <div class="title">React tutorials</div>
+    <img src="http://lorempixel.com/400/200" /> -->
+
+
+
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        // let Title = React.createElement('H1', {
+        //     className: "title"
+        // }, 'Anh moi cua son tung MTP')
+        let Title = <h1 className="title">Anh moi cua son tung MTP</h1>;
+        let Image = React.createElement('img', {
+            className: "imgST",
+            src: "https://kenh14cdn.com/2019/11/11/1-15734509206731080608805.jpg"
+        })
+        let Container = React.createElement('div', {
+            className: "container"
+        }, Title, Image)
+        let ROOT = document.getElementById("root");
+        ReactDOM.render(Container, ROOT)
+    </script>
+</body>
+
+</html>
